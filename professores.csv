@@ -1,0 +1,3 @@
+codigo;nome;disciplina;formacao;salario;pago;email
+P001;Ana Paula Souza;Matemática;Licenciatura em Matemática;4500;false;ana.souza@escolaparana.com.br
+P002;Carlos Eduardo Lima;História;Licenciatura em História;5200;true;carlos.lima@escolaparana.com.br
