@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<head>
+    <link rel="stylesheet" href="Escola_Parana.css">
+    <meta charset="UTF-8">
+
+</head>
+
+
+</head>
+
+<body>
+
+
+    <titulo>Arquivo de cdastros</titulo>
+        <div class="caixaPesquisa">
+
+    <button onclick="carregarAlunos()">
+        Atualizar Lista
+    </button>
+
+    <table>
+
+        <thead>
+
+            <tr>
+                <th>Código</th>
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>Responsável</th>
+                <th>E-mail</th>
+                <th>Telefone</th>
+                <th>Ano</th>
+                <th>Turma</th>
+            </tr>
+
+        </thead>
+
+        <tbody id="tabelaAlunos">
+
+        </tbody>
+</div>
+    </table>
+
+<script>
+
+function carregarAlunos(){
+
+    let tabela =
+        document.getElementById("tabelaAlunos");
+
+    tabela.innerHTML = "";
+
+    alunos.forEach(aluno => {
+
+        tabela.innerHTML += `
+            <tr>
+                <td>${aluno.codigo}</td>
+                <td>${aluno.nome}</td>
+                <td>${aluno.cpf}</td>
+                <td>${aluno.responsavel}</td>
+                <td>${aluno.email}</td>
+                <td>${aluno.telefone}</td>
+                <td>${aluno.ano}</td>
+                <td>${aluno.turma}</td>
+            </tr>
+        `;
+
+    });
+
+}
+
+carregarAlunos();
+
+</script>
+
+<script src="banco.js"></script>
+
+</body>
+
+</html>
